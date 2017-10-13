@@ -1,0 +1,21 @@
+sudo: false
+
+language: python
+
+python:
+  - "3.4"
+  - "3.5"
+  - "3.6"
+
+install:
+  - pip install coverage tox tox-travis
+
+script:
+  - tox
+
+matrix:
+  include:
+    - python: 3.6
+      env: TOXENV=isort
+    - python: 3.6
+      env: TOXENV=warnings
