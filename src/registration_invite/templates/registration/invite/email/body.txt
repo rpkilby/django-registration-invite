@@ -1,0 +1,5 @@
+You have been invited to {{ site.name }}. Please click on the following link to activate your account.
+
+{{ activation_url }}
+
+The above link is valid for {{ expiration_days }} days.

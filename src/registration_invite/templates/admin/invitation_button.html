@@ -1,0 +1,9 @@
+
+{% load i18n %}
+
+<li>
+  {% url 'admin:registration_invitation' as default_link %}
+  <a href="{{ link|default:default_link }}" class="addlink">
+    {% blocktrans with button_text=text|default:"Invite user" %}{{ button_text }}{% endblocktrans %}
+  </a>
+</li>

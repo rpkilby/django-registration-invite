@@ -1,0 +1,10 @@
+{% if not instance %}
+<h1>Invalid Activation Code</h1>
+<p>The activation code you entered is invalid. Please double check the activation code you received.</p>
+{% else %}
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button action="submit">Submit</button>
+</form>
+{% endif %}
