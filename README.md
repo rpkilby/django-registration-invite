@@ -24,3 +24,8 @@ HMAC-based invitation backend for django-registration
 
 - re-invite for expired users
 - tests
+
+
+## Copyright & License
+
+Copyright &copy; 2017 NC State University. See LICENSE for details.
