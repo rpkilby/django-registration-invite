@@ -26,6 +26,18 @@ HMAC-based invitation backend for django-registration
 - tests
 
 
+## Release Process
+
+- Update package version in `setup.py`
+- Create git tag for version
+- Upload release to PyPI
+    ```bash
+    $ pip install -U setuptools wheel
+    $ rm -rf dist/ build/
+    $ python setup.py sdist bdist_wheel upload
+    ```
+
+
 ## Copyright & License
 
 Copyright &copy; 2017 NC State University. See LICENSE for details.
