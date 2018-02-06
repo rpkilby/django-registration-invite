@@ -1,5 +1,9 @@
 # django-registration-invite
-HMAC-based invitation backend for django-registration
+
+[![Build Status](https://travis-ci.org/rpkilby/django-registration-invite.svg?branch=master)](https://travis-ci.org/rpkilby/django-registration-invite)
+[![Codecov](https://codecov.io/gh/rpkilby/django-registration-invite/branch/master/graph/badge.svg)](https://codecov.io/gh/rpkilby/django-registration-invite)
+[![Version](https://img.shields.io/pypi/v/django-registration-invite.svg)](https://pypi.python.org/pypi/django-registration-invite)
+[![License](https://img.shields.io/pypi/l/django-registration-invite.svg)](https://pypi.python.org/pypi/django-registration-invite)
 
 
 ## Installation:
