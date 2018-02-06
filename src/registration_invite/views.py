@@ -19,8 +19,8 @@ class InvitationView(RegistrationView):
     template_name = 'registration/invite/invitation_form.html'
     form_class = InvitationForm
 
-    email_body_template = 'registration/invite/email_body.txt'
-    email_subject_template = 'registration/invite/email_subject.txt'
+    email_body_template = 'registration/invite/email/body.txt'
+    email_subject_template = 'registration/invite/email/subject.txt'
 
     @property
     def current_app(self):
