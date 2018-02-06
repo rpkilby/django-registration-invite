@@ -8,10 +8,12 @@ python:
   - "3.6"
 
 install:
-  - pip install coverage tox tox-travis
+  - pip install -U setuptools wheel
+  - pip install tox tox-travis tox-venv
+  - python setup.py bdist_wheel
 
 script:
-  - tox
+  - tox --installpkg ./dist/django_registration_invite-*.whl
 
 matrix:
   include:
