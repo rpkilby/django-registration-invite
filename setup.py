@@ -3,18 +3,12 @@ import sys
 from setuptools import setup, find_packages
 
 
-PATH = os.path.join(os.path.dirname(__file__), 'README.md')
-
-
 # require pypandoc conversion for upload
 if 'upload' in sys.argv[1:]:
     import pypandoc
-    README = pypandoc.convert(PATH, 'rst')
+    README = pypandoc.convert('README.md', 'rst')
 else:
-    README = open(PATH).read()
-
-
-os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
+    README = open('README.md').read()
 
 
 setup(
@@ -36,6 +30,7 @@ setup(
         'Environment :: Web Environment',
         'Framework :: Django',
         'Framework :: Django :: 1.11',
+        'Framework :: Django :: 2.0',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
