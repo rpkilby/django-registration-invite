@@ -12,7 +12,7 @@ else:
 
 setup(
     name='django-registration-invite',
-    version='0.0.2',
+    version='0.0.3',
     description='HMAC-based invitation backend for django-registration',
     long_description=README,
     author='Ryan P Kilby',
