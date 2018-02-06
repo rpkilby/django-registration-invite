@@ -1,4 +1,3 @@
-import os
 import sys
 from setuptools import setup, find_packages
 
@@ -19,9 +18,10 @@ setup(
     author='Ryan P Kilby',
     author_email='rpkilby@ncsu.edu',
     keywords='django-registration invitation invite',
-    url='https://github.com/ITNG/django-registration-invite/',
+    url='https://github.com/rpkilby/django-registration-invite/',
     packages=find_packages('src'),
     package_dir={'': 'src'},
+    include_package_data=True,
     zip_safe=False,
     install_requires=[],
     license='BSD License',
